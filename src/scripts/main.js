@@ -382,7 +382,7 @@ for (const hum of people) {
   bornPeople.textContent = hum['born'];
   diedPeople.textContent = hum['died'];
   agePeople.textContent = hum['died'] - hum['born'];
-  centuryPeople.textContent = Math.round(hum['died'] / 100);
+  centuryPeople.textContent = Math.ceil(hum['died'] / 100);
 
   row.appendChild(namePeople);
   row.appendChild(genderPeople);
