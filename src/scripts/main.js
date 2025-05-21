@@ -369,20 +369,20 @@ for (const hum of people) {
   const agePeople = document.createElement('td');
   const centuryPeople = document.createElement('td');
 
-  namePeople.textContent = hum['name'];
+  namePeople.textContent = hum.name;
 
-  if (hum['sex'] === 'm') {
+  if (hum.sex === 'm') {
     genderPeople.textContent = 'Male';
   }
 
-  if (hum['sex'] === 'f') {
+  if (hum.sex === 'f') {
     genderPeople.textContent = 'Female';
   }
 
-  bornPeople.textContent = hum['born'];
-  diedPeople.textContent = hum['died'];
-  agePeople.textContent = hum['died'] - hum['born'];
-  centuryPeople.textContent = Math.ceil(hum['died'] / 100);
+  bornPeople.textContent = hum.born;
+  diedPeople.textContent = hum.died;
+  agePeople.textContent = hum.died - hum.born;
+  centuryPeople.textContent = Math.ceil(hum.died / 100);
 
   row.appendChild(namePeople);
   row.appendChild(genderPeople);
